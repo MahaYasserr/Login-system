@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container ">
+        <div class="row justify-content-center align-content-center vh-100  ">
+            <div class="col-md-12 w-75  p-5 text-white mid-login ">
+                <h1 class="text-center">Smart login system </h1>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name-signup" placeholder="enter your name">
+                  </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">email</label>
+                    <input type="email" oninput="validateEmail()" class="form-control" id="email-signup" placeholder="enter your email">
+                  </div>
+            
+           
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password"  class="form-control" id="password-signup" placeholder="enter your password">
+                  </div>
+                  <div class="text-center text-danger" id="warning"></div>
+                  <div class="text-center text-danger" id="warning2"></div>
+
+                  <a href="pages/login.html" type="submit" onclick="signUp()" class="btn btn-primary w-100 mt-3 btn-mauve">Sign up</a>
+                  <p class="text-center pt-2">Already have an account? <a class="text-white" href="../login/index.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
